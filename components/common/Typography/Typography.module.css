@@ -1,0 +1,40 @@
+.h1 {
+  font-size: 67px;
+}
+
+.h2 {
+  font-size: 51px;
+}
+
+.h3 {
+  font-size: 38px;
+  line-height: 120%;
+}
+
+.h4 {
+  font-size: 28px;
+}
+
+.h5 {
+  font-size: 22px;
+  line-height: 160%;
+}
+
+.base {
+  @apply text-base;
+}
+
+.caption {
+  @apply text-xs;
+}
+
+.h4,
+.base {
+  line-height: 140%;
+}
+
+.h1,
+.h2,
+.caption {
+  line-height: 110%;
+}

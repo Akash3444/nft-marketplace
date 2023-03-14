@@ -21,6 +21,9 @@ module.exports = {
         'space-mono': "'Space Mono', monospace",
         'work-sans': "'Work Sans', sans-serif",
       },
+      borderRadius: {
+        brand: '20px',
+      },
     },
   },
   plugins: [],

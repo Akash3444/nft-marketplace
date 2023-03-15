@@ -12,6 +12,7 @@ module.exports = {
     colors: {
       dark: '#2B2B2B',
       'dark-gray': '#3B3B3B',
+      'light-gray': '#CCCCCC',
       caption: '#858584',
       white: '#FFFFFF',
       primary: '#A259FF',
@@ -23,6 +24,25 @@ module.exports = {
       },
       borderRadius: {
         brand: '20px',
+      },
+      padding: {
+        7.5: '30px',
+      },
+      margin: {
+        7.5: '30px',
+      },
+      gap: {
+        7.5: '30px',
+      },
+      height: {
+        11.5: '46px',
+      },
+      maxWidth: {
+        brand: '1049px',
+      },
+      screens: {
+        tablet: '834px',
+        desktop: '1280px',
       },
     },
   },

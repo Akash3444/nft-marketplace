@@ -1,38 +1,32 @@
+import { ComponentProps, FC } from 'react';
 import classNames from 'classnames';
-import { ComponentProps, FC, PropsWithChildren } from 'react';
-import s from './Button.module.css';
+import s from './TextField.module.css';
+console.log('s :', s);
 
-type ButtonSize = 'small' | 'medium' | 'large';
+type TextFieldSize = 'small' | 'medium' | 'large';
 
-interface ButtonProps extends ComponentProps<'button'> {
+interface TextFieldProps extends Omit<ComponentProps<'input'>, 'size'> {
   size?:
-    | ButtonSize
+    | TextFieldSize
     | {
-        base: ButtonSize;
-        tablet?: ButtonSize;
-        desktop?: ButtonSize;
+        base: TextFieldSize;
+        tablet?: TextFieldSize;
+        desktop?: TextFieldSize;
       };
-  variant?: 'primary' | 'outlined';
 }
 
-const Button: FC<PropsWithChildren<ButtonProps>> = ({
-  children,
-  className,
-  size = 'medium',
-  variant = 'primary',
-  ...rest
-}) => {
+const TextField: FC<TextFieldProps> = ({ type = 'text', size = 'medium', className, ...props }) => {
+  console.log('size :', size);
   const hasSingleSize = typeof size === 'string';
+  console.log('hasSingleSize :', hasSingleSize);
 
-  const buttonClass = classNames(
+  console.log("hasSingleSize && size === 'small' :", hasSingleSize && size === 'small');
+  const textFieldClass = classNames(
     s.root,
     {
       [s.small]: hasSingleSize ? size === 'small' : size.base === 'small',
       [s.medium]: hasSingleSize ? size === 'medium' : size.base === 'medium',
       [s.large]: hasSingleSize ? size === 'large' : size.base === 'large',
-      [s.primary]: variant === 'primary',
-      [s.outlined]: variant === 'outlined',
-      [s.outlined]: variant === 'outlined',
       [s.tabletSmall]: !hasSingleSize && size.tablet === 'small',
       [s.desktopSmall]: !hasSingleSize && size.desktop === 'small',
       [s.tabletMedium]: !hasSingleSize && size.tablet === 'medium',
@@ -43,11 +37,7 @@ const Button: FC<PropsWithChildren<ButtonProps>> = ({
     className
   );
 
-  return (
-    <button className={buttonClass} {...rest}>
-      {children}
-    </button>
-  );
+  return <input type={type} className={textFieldClass} {...props} />;
 };
 
-export default Button;
+export default TextField;

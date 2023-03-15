@@ -1,15 +1,5 @@
 .root {
-  @apply flex items-center justify-center rounded-brand font-work-sans font-semibold text-white;
-  padding-inline: 50px;
-  line-height: 140%;
-}
-
-.primary {
-  @apply bg-primary;
-}
-
-.outlined {
-  @apply border-solid border-2 border-primary;
+  @apply rounded-brand font-work-sans text-dark placeholder:text-dark px-5 text-base;
 }
 
 .small {

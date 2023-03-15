@@ -1,3 +1,11 @@
+import { Hero, TopCreators, TrendingCollection } from '@/components/Home';
+
 export default function Home() {
-  return <h1>NFT Marketplace</h1>;
+  return (
+    <>
+      <Hero />
+      <TrendingCollection />
+      <TopCreators />
+    </>
+  );
 }

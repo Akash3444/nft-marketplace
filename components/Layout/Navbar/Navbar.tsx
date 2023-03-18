@@ -6,7 +6,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className="h-14 desktop:h-[100px] flex items-center justify-between px-7.5">
+    <nav className="h-14 desktop:h-[100px] flex items-center justify-between px-7.5 tablet:px-12">
       <Logo />
 
       <button className="desktop:hidden">

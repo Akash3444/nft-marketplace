@@ -26,13 +26,8 @@ module.exports = {
         brand: '20px',
       },
       padding: {
-        7.5: '30px',
-      },
-      margin: {
-        7.5: '30px',
-      },
-      gap: {
-        7.5: '30px',
+        15: '60px',
+        18: '72px',
       },
       height: {
         11.5: '46px',
@@ -44,7 +39,19 @@ module.exports = {
         tablet: '834px',
         desktop: '1280px',
       },
+      fontSize: {
+        h1: ['67px', '110%'],
+        h2: ['51px', '110%'],
+        h3: ['38px', '120%'],
+        h4: ['28px', '140%'],
+        h5: ['22px', '160%'],
+        base: ['16px', '140%'],
+        caption: ['12px', '110%'],
+      },
+      spacing: {
+        7.5: '30px',
+      },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/aspect-ratio')],
 };

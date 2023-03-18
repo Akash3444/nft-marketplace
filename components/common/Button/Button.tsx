@@ -12,7 +12,7 @@ interface ButtonProps extends ComponentProps<'button'> {
         tablet?: ButtonSize;
         desktop?: ButtonSize;
       };
-  variant?: 'primary' | 'outlined';
+  variant?: 'primary' | 'outlined' | 'inverted';
 }
 
 const Button: FC<PropsWithChildren<ButtonProps>> = ({
@@ -31,7 +31,7 @@ const Button: FC<PropsWithChildren<ButtonProps>> = ({
       [s.medium]: hasSingleSize ? size === 'medium' : size.base === 'medium',
       [s.large]: hasSingleSize ? size === 'large' : size.base === 'large',
       [s.primary]: variant === 'primary',
-      [s.outlined]: variant === 'outlined',
+      [s.inverted]: variant === 'inverted',
       [s.outlined]: variant === 'outlined',
       [s.tabletSmall]: !hasSingleSize && size.tablet === 'small',
       [s.desktopSmall]: !hasSingleSize && size.desktop === 'small',

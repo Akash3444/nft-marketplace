@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import { FC, HTMLAttributes, PropsWithChildren } from 'react';
-import s from './Typography.module.css';
 
 interface TypographyProps extends HTMLAttributes<HTMLElement> {
   size?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'base' | 'caption';
@@ -16,13 +15,13 @@ const Typography: FC<PropsWithChildren<TypographyProps>> = ({
 }) => {
   const typographyClass = classNames(
     {
-      [s.h1]: size === 'h1',
-      [s.h2]: size === 'h2',
-      [s.h3]: size === 'h3',
-      [s.h4]: size === 'h4',
-      [s.h5]: size === 'h5',
-      [s.base]: size === 'base',
-      [s.caption]: size === 'caption',
+      'text-h1': size === 'h1',
+      'text-h2': size === 'h2',
+      'text-h3': size === 'h3',
+      'text-h4': size === 'h4',
+      'text-h5': size === 'h5',
+      'text-base': size === 'base',
+      'text-caption': size === 'caption',
       'font-normal': size === 'base' || size === 'caption',
       'font-bold': size !== 'base' && size !== 'caption' && fontFamily === 'space-mono',
       'font-semibold': size !== 'base' && size !== 'caption' && fontFamily === 'work-sans',

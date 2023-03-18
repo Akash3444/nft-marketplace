@@ -24,9 +24,11 @@ const Navbar = () => {
           Connect a wallet
         </Link>
 
-        <Button className="gap-x-3">
-          <UserIcon className="h-5 w-5" /> Sign Up
-        </Button>
+        <Link href="/create-account">
+          <Button className="gap-x-3">
+            <UserIcon className="h-5 w-5" /> Sign Up
+          </Button>
+        </Link>
       </div>
     </nav>
   );

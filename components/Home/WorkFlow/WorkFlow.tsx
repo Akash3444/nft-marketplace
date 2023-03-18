@@ -28,7 +28,7 @@ const WorkFlow = () => {
       <Typography size="h4" fontFamily="work-sans" className="desktop:text-h3">
         How it works
       </Typography>
-      <Typography fontFamily="work-sans" className="mt-2.5 desktop:text-h5">
+      <Typography fontFamily="work-sans" className="mt-2.5 desktop:text-h5 capitalize">
         Find out how to get started
       </Typography>
       <div className="mt-10 grid grid-cols-1 gap-5 tablet:gap-7.5 tablet:grid-cols-3">

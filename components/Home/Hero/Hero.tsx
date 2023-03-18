@@ -11,12 +11,12 @@ const Hero = () => {
           Discover digital art & Collect NFTs
         </Typography>
         <Typography fontFamily="work-sans" className="desktop:text-h5">
-          NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than
+          NFT marketplace UI created for NFT collectors. Collect, buy and sell art from more than
           20k NFT artists.
         </Typography>
 
         <div className="my-10 tablet:hidden rounded-brand overflow-hidden">
-          <img src="/space-walking.png" alt="Space walking" />
+          <img src="/space-walking.png" alt="Space walking" className="w-full" />
           <div className="p-5 bg-dark-gray">
             <Typography size="h5" fontFamily="work-sans">
               Space Walking

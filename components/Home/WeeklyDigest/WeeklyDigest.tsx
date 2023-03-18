@@ -14,7 +14,7 @@ const WeeklyDigest = () => {
           <Typography size="h4" fontFamily="work-sans" className="capitalize desktop:text-h3">
             Join our weekly digest
           </Typography>
-          <Typography fontFamily="work-sans" className="mt-2.5 desktop:text-h5">
+          <Typography fontFamily="work-sans" className="mt-2.5 desktop:text-h5 capitalize">
             Get exclusive promotions & updates straight to your inbox.
           </Typography>
 
@@ -22,7 +22,7 @@ const WeeklyDigest = () => {
             <TextField
               size={{ base: 'small', desktop: 'medium' }}
               placeholder="Enter your email here"
-              className="w-full desktop:w-72"
+              className="w-full desktop:w-72 desktop:focus:outline-none"
             />
             <Button
               size={{ base: 'small', desktop: 'medium' }}

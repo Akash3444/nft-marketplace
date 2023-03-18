@@ -65,7 +65,7 @@ const Footer = () => {
               <TextField
                 size={{ base: 'small', tablet: 'medium' }}
                 placeholder="Enter your email here"
-                className="mt-5 tablet:mt-0 w-full tablet:w-72"
+                className="mt-5 tablet:mt-0 w-full tablet:w-72 tablet:focus:outline-none"
               />
               <Button
                 size={{ base: 'small', tablet: 'medium' }}

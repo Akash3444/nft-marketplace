@@ -33,7 +33,7 @@ const DiscoverMore = () => {
         <Typography fontFamily="work-sans" size="h4" className="desktop:text-h3">
           Discover More NFTs
         </Typography>
-        <Typography fontFamily="work-sans" className="mt-2.5 desktop:text-h5">
+        <Typography fontFamily="work-sans" className="mt-2.5 desktop:text-h5 capitalize">
           Explore new trending NFTs
         </Typography>
       </div>

@@ -1,28 +1,35 @@
 import { Button, Container, Typography } from '@/components/common';
 import { EyeIcon } from '@/components/icons';
 import React from 'react';
+import NFTCard from '../NFTCard';
 
 const nftList = [
   {
     name: 'Distant Galaxy',
-    artist: 'MoonDancer',
+    artist: {
+      name: 'MoonDancer',
+      avatar: '/avatar/avatar-16.png',
+    },
     price: '1.63 ETH',
     highestBid: '0.33 wETH',
-    avatar: '/avatar/avatar-16.png',
   },
   {
     name: 'Life on Edena',
-    artist: 'NebulaKid',
+    artist: {
+      name: 'NebulaKid',
+      avatar: '/avatar/avatar-10.png',
+    },
     price: '1.63 ETH',
     highestBid: '0.33 wETH',
-    avatar: '/avatar/avatar-10.png',
   },
   {
     name: 'AstroFiction',
-    artist: 'Spaceone',
+    artist: {
+      name: 'Spaceone',
+      avatar: '/avatar/avatar-15.png',
+    },
     price: '1.63 ETH',
     highestBid: '0.33 wETH',
-    avatar: '/avatar/avatar-15.png',
   },
 ];
 
@@ -39,40 +46,8 @@ const DiscoverMore = () => {
       </div>
 
       <div className="my-10 grid grid-cols-1 tablet:grid-cols-2 gap-7.5 tablet:col-span-2 desktop:grid-cols-3">
-        {nftList.map(({ name, artist, price, highestBid, avatar }, index) => (
-          <div key={index} className="rounded-brand overflow-hidden">
-            <div className="w-full aspect-w-12 aspect-h-9">
-              <img src={`/nft-${index + 1}.png`} alt="Space walking" className="object-cover" />
-            </div>
-            <div className="p-5 bg-dark-gray">
-              <Typography size="h5" fontFamily="work-sans">
-                {name}
-              </Typography>
-              <div className="mt-2.5 flex items-center gap-x-3">
-                <img src={avatar} alt="Animakid" className="h-6 w-6 rounded-full" />
-                <Typography>{artist}</Typography>
-              </div>
-
-              <div className="mt-6 flex items-start justify-between">
-                <div className="text-left">
-                  <Typography size="caption" className="mb-2 text-caption">
-                    Price:
-                  </Typography>
-                  <Typography size="caption" className="text-white">
-                    {price}
-                  </Typography>
-                </div>
-                <div className="text-right">
-                  <Typography size="caption" className="mb-2 text-caption">
-                    Highest Bid:
-                  </Typography>
-                  <Typography size="caption" className="text-white">
-                    {highestBid}
-                  </Typography>
-                </div>
-              </div>
-            </div>
-          </div>
+        {nftList.map((nft, index) => (
+          <NFTCard key={index} {...nft} image={`/nft-${index + 1}.png`} />
         ))}
       </div>
 

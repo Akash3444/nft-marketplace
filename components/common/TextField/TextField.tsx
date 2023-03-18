@@ -1,7 +1,6 @@
 import { ComponentProps, FC } from 'react';
 import classNames from 'classnames';
 import s from './TextField.module.css';
-console.log('s :', s);
 
 type TextFieldSize = 'small' | 'medium' | 'large';
 
@@ -16,11 +15,7 @@ interface TextFieldProps extends Omit<ComponentProps<'input'>, 'size'> {
 }
 
 const TextField: FC<TextFieldProps> = ({ type = 'text', size = 'medium', className, ...props }) => {
-  console.log('size :', size);
   const hasSingleSize = typeof size === 'string';
-  console.log('hasSingleSize :', hasSingleSize);
-
-  console.log("hasSingleSize && size === 'small' :", hasSingleSize && size === 'small');
   const textFieldClass = classNames(
     s.root,
     {

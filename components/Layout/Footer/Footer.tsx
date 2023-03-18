@@ -27,7 +27,7 @@ const Footer = () => {
             <Typography fontFamily="work-sans" className="mt-5 text-light-gray">
               Join our community
             </Typography>
-            <div className="flex items-center mt-4 gap-x-2.5 text-caption">
+            <div className="flex items-center mt-4 gap-x-2.5 text-label">
               <DiscordIcon />
               <YoutubeIcon />
               <TwitterIcon />

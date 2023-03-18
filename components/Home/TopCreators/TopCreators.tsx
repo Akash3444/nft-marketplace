@@ -79,7 +79,7 @@ const TopCreators = () => {
                 alt={name}
                 className="block h-full w-full desktop:h-[120px] desktop:w-[120px] desktop:mx-auto"
               />
-              <Typography className="absolute -left-2 -top-2 desktop:-left-0 desktop:top-0 h-7.5 w-7.5 flex items-center justify-center bg-dark text-caption rounded-full">
+              <Typography className="absolute -left-2 -top-2 desktop:-left-0 desktop:top-0 h-7.5 w-7.5 flex items-center justify-center bg-dark text-label rounded-full">
                 {index + 1}
               </Typography>
             </div>
@@ -88,7 +88,7 @@ const TopCreators = () => {
                 {name}
               </Typography>
               <div className="mt-1 flex items-center">
-                <Typography fontFamily="work-sans" className="text-caption">
+                <Typography fontFamily="work-sans" className="text-label">
                   Total Sales:
                 </Typography>
                 <Typography>&nbsp;{totalSales}</Typography>

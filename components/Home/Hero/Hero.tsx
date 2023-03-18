@@ -1,5 +1,6 @@
 import { Button, Container, Typography } from '@/components/common';
 import { RocketLaunchIcon } from '@/components/icons';
+import Link from 'next/link';
 import React from 'react';
 import s from './Hero.module.css';
 
@@ -21,10 +22,12 @@ const Hero = () => {
             <Typography size="h5" fontFamily="work-sans">
               Space Walking
             </Typography>
-            <div className="mt-2.5 flex items-center gap-x-3">
-              <img src="avatar/avatar-14.png" alt="Animakid" className="h-6 w-6 rounded-full" />
-              <Typography fontFamily="work-sans">Animakid</Typography>
-            </div>
+            <Link href="/artist">
+              <div className="mt-2.5 flex items-center gap-x-3">
+                <img src="avatar/avatar-14.png" alt="Animakid" className="h-6 w-6 rounded-full" />
+                <Typography fontFamily="work-sans">Animakid</Typography>
+              </div>
+            </Link>
           </div>
         </div>
 
@@ -72,10 +75,12 @@ const Hero = () => {
           <Typography size="h5" fontFamily="work-sans">
             Space Walking
           </Typography>
-          <div className="mt-2.5 flex items-center gap-x-3">
-            <img src="avatar/avatar-14.png" alt="Animakid" className="h-6 w-6 rounded-full" />
-            <Typography fontFamily="work-sans">Animakid</Typography>
-          </div>
+          <Link href="/artist">
+            <div className="mt-2.5 flex items-center gap-x-3">
+              <img src="avatar/avatar-14.png" alt="Animakid" className="h-6 w-6 rounded-full" />
+              <Typography fontFamily="work-sans">Animakid</Typography>
+            </div>
+          </Link>
         </div>
       </div>
     </Container>

@@ -53,7 +53,7 @@ const Artist = () => {
           />
         </div>
 
-        <div className="tablet:px-18">
+        <div className="tablet:px-18 desktop:px-0 desktop:max-w-[1050px] desktop:mx-auto">
           <div className="relative z-50 h-[120px] w-[120px] rounded-brand -mt-[60px] mx-auto tablet:ml-0 border-2 border-dark">
             <img src="/artist-avatar.png" alt="" className="h-full w-full" />
           </div>
@@ -130,39 +130,41 @@ const Artist = () => {
       </div>
 
       {/* Tabs */}
-      <div className="border-t border-dark-gray flex justify-center px-7.5 tablet:px-18">
-        <div className="flex-1 flex items-center gap-x-4 justify-center py-5 border-b-2 border-label">
-          <Typography fontFamily="work-sans" className="font-semibold desktop:text-h5">
-            Created
-          </Typography>
-          <Typography
-            size="caption"
-            className="hidden desktop:text-base tablet:block py-1 px-2.5 bg-label rounded-brand"
-          >
-            302
-          </Typography>
-        </div>
-        <div className="flex-1 flex items-center gap-x-4 justify-center py-5">
-          <Typography fontFamily="work-sans" className="font-semibold desktop:text-h5 text-label">
-            Owned
-          </Typography>
-          <Typography
-            size="caption"
-            className="hidden desktop:text-base tablet:block py-1 px-2.5 bg-dark-gray rounded-brand"
-          >
-            67
-          </Typography>
-        </div>
-        <div className="flex-1 flex items-center gap-x-4 justify-center py-5">
-          <Typography fontFamily="work-sans" className="font-semibold desktop:text-h5 text-label">
-            Collection
-          </Typography>
-          <Typography
-            size="caption"
-            className="hidden desktop:text-base tablet:block py-1 px-2.5 bg-dark-gray rounded-brand"
-          >
-            4
-          </Typography>
+      <div className="border-t border-dark-gray">
+        <div className="flex justify-center px-7.5 tablet:px-18 desktop:px-0 desktop:max-w-[1050px] desktop:mx-auto">
+          <div className="flex-1 flex items-center gap-x-4 justify-center py-5 border-b-2 border-label">
+            <Typography fontFamily="work-sans" className="font-semibold desktop:text-h5">
+              Created
+            </Typography>
+            <Typography
+              size="caption"
+              className="hidden desktop:text-base tablet:block py-1 px-2.5 bg-label rounded-brand"
+            >
+              302
+            </Typography>
+          </div>
+          <div className="flex-1 flex items-center gap-x-4 justify-center py-5">
+            <Typography fontFamily="work-sans" className="font-semibold desktop:text-h5 text-label">
+              Owned
+            </Typography>
+            <Typography
+              size="caption"
+              className="hidden desktop:text-base tablet:block py-1 px-2.5 bg-dark-gray rounded-brand"
+            >
+              67
+            </Typography>
+          </div>
+          <div className="flex-1 flex items-center gap-x-4 justify-center py-5">
+            <Typography fontFamily="work-sans" className="font-semibold desktop:text-h5 text-label">
+              Collection
+            </Typography>
+            <Typography
+              size="caption"
+              className="hidden desktop:text-base tablet:block py-1 px-2.5 bg-dark-gray rounded-brand"
+            >
+              4
+            </Typography>
+          </div>
         </div>
       </div>
 
